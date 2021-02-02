@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* 꼭 정의 내릴것 */
+* {margin:0;padding:0;vertical-align:middle;}
+/* 모든 태그요소들을/ver-al : 수직 정렬 */
+html,body {width:100;height:100%}
+/* html */
+
+/* 내용이 넘쳤을때> y축으로 스크롤바 생성 만듬 scroll<-->hidden 안보이게함*/
+html {overflow-y:scroll;}
+/* 백그라운드: 배경색, 이미지(반투명일경우 배경색에 간섭됨) 반복하지 않음 */
+body {font:normal 14px/1 '돋움,굴림';color:#444;background:#fff url(../img/restaurant-img7.jpg) no-repeat 0 0;}
+/* body {font-weight:normal;font-size:14px;line-height:1;font-family:'돋움,굴림';color:#444;background:#fff} 
+배경에 패턴이 들어가는 경우 no-repeat 은 쓰지 않아도 된다 */
+/* 위의 요약본이 권장 사항 */
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:14px;}
+/* 폰트 사이즈 초기화 사항들 */
+em,i,address{font-style:normal;}
+ul,li{list-style:none;}
+/* 기본 패딩값 40에 대해 리셋시킴 */
+.clearfix::after {content:'';display:block;clear:both;}
+/* 링크 태그 */
+a {color:#444;text-decoration:none;}
+/* 시멘틱 태그 */
+header,main,section,footer {display:block;}
+/* 메인을 블록 처리 안하면 11이하에선 깨짐 */
